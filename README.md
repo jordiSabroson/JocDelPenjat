@@ -1,1 +1,1 @@
-# JocDelPenjat
+# Joc del penjat

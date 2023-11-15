@@ -85,6 +85,13 @@ function novaPartida() {
             // Si la posició de la paraula és igual a la lletra:
             if (paraula[i] == lletra) {
 
+                // IF per comprovar que la lletra encertada no hagi estat encertada abans
+                if (lletresEndevinades.includes(lletra)) {
+                    console.log("Aquesta lletra ja l'has endevinat");
+                    lletraCorrecta = true;
+                    continue;
+                }
+
                 // S'imprimeix la cadena endevina junt amb la lletra en la seva posició correcte
                 endevina = endevina.substring(0, i) + lletra + endevina.substring((i + 1));
                 console.log(endevina);

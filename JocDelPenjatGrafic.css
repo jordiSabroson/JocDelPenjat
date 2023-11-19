@@ -1,7 +1,10 @@
-#botons {
+body {
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 100px;
 }
 
 #botons button {
@@ -21,8 +24,6 @@
     transition-duration: .15s;
     transition-property: all;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-
-
 }
 
 #botons button:hover {
@@ -31,9 +32,74 @@
 }
 
 #jocPenjat {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20%;
-    letter-spacing: 5px;
+    margin-top: 100px;
+    letter-spacing: 10px;
+    font-size: 50px;
 }
+
+#abecedari {
+    margin-top: 50px;
+}
+
+#abecedari button {
+    margin-left: 2px;
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 5px 10px;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
+#abecedari button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
+
+#abecedari button:disabled,
+button[disabled] {
+    background: #c5ba93;
+    font-family: inherit;
+    padding: 5px 10px;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
+#lletresUtilitzades {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+#imatgePenjat {
+    padding-right: 30px;
+}
+
+#reset button {
+    margin: 30px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 3px;
+    color: #000000;
+    background: #fffefe;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 20px;
+    text-align: center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+#reset button:hover {
+    color: #000;
+    background: rgb(255, 87, 87);
+}
+
